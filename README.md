@@ -80,15 +80,12 @@ const Cafe = () => {
 </details>
 
  
-## # Template
+## # List Views(FlatList) / Mapping toList()
 
 <details>
  <summary> View Code </summary>
 
- 
-```
-
-```
+- React Native [List Views](https://reactnative.dev/docs/using-a-listview) 
  
 </details>
  
