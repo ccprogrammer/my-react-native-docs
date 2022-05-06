@@ -74,12 +74,13 @@ const Cafe = () => {
     </>
   );
 }
+      
 ```
  
 </details>
 
  
-    ## # Template
+## # Template
 
 <details>
  <summary> View Code </summary>
