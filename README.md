@@ -7,10 +7,7 @@ Props is short for “properties”. Props let you customize React components by
 <details>
  <summary> View Code </summary>
 
-### 	• Simple Props
 
-<details>
- <summary> View Code </summary>
  
 ```
   const Cat = (props) => {
@@ -32,11 +29,48 @@ const Cafe = () => {
 }
 
 ```
+</details>
+ 
+ 
+  ## # useState / setState
+  
+  For more explanation, there are 2 const variables that that have bool value true, in here {isHungry ? "hungry" : "full"} it means if isHungry still remains true it it will return text "hungry" if the state changed it will return "full", the function to change the state in in the button  setIsHungry(false);
+
+<details>
+ <summary> View Code </summary>
+
+```
+const Cat = (props) => {
+  const [isHungry, setIsHungry] = useState(true);
+
+  return (
+    <View>
+      <Text>
+        I am {props.name}, and I am {isHungry ? "hungry" : "full"}!
+      </Text>
+      <Button
+        onPress={() => {
+          setIsHungry(false);
+        }}
+        disabled={!isHungry}
+        title={isHungry ? "Pour me some milk, please!" : "Thank you!"}
+      />
+    </View>
+  );
+}
+
+const Cafe = () => {
+  return (
+    <>
+      <Cat name="Munkustrap" />
+      <Cat name="Spot" />
+    </>
+  );
+}
+```
  
 </details>
-  
- </details>
- 
+
  
  
  ---
@@ -49,15 +83,10 @@ const Cafe = () => {
 <details>
  <summary> View Code </summary>
 
-### 	• Template
-
-<details>
- <summary> View Code </summary>
  
 ```
 
 ```
  
 </details>
-  
- </details>
+
