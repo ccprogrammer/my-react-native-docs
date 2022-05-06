@@ -34,7 +34,7 @@ const Cafe = () => {
  
   ## # useState / setState
   
-  For more explanation, there are 2 const variables that that have bool value true, in here {isHungry ? "hungry" : "full"} it means if isHungry still remains true it it will return text "hungry" if the state changed it will return "full", the function to change the state in in the button  setIsHungry(false);
+  For more explanation, there are 2 const variables that that have bool value true, in here {isHungry ? "hungry" : "full"} it means if isHungry still remains true it it will return text "hungry" if the state changed it will return "full", the function to change the state in in the button  setIsHungry(false); and for disabled it's mean the button will go into disabled state if isHungry = false
 
 <details>
  <summary> View Code </summary>
