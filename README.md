@@ -10,6 +10,9 @@ Props is short for “properties”. Props let you customize React components by
 
  
 ```
+import React from 'react';
+import { Text, View, Image } from 'react-native';
+  
   const Cat = (props) => {
   return (
     <View>
@@ -34,12 +37,16 @@ const Cafe = () => {
  
   ## # useState / setState
   
-  For more explanation, there are 2 const variables that that have bool value true, in here {isHungry ? "hungry" : "full"} it means if isHungry still remains true it it will return text "hungry" if the state changed it will return "full", the function to change the state in in the button  setIsHungry(false); and for disabled it's mean the button will go into disabled state if isHungry = false
+  For more explanation, there are 2 const variables that that have bool value true, in here {isHungry ? "hungry" : "full"} it means if isHungry still remains true it it will return text "hungry" if the state changed it will return "full", setIsHunry in button function is to change the isHungry state and for disabled in button it has the reverse value from isHungry from false at start when isHungry change then the button will change to true
 
 <details>
  <summary> View Code </summary>
 
 ```
+import React, { useState } from "react";
+import { Button, Text, View } from "react-native";
+
+  
 const Cat = (props) => {
   const [isHungry, setIsHungry] = useState(true);
 
@@ -72,6 +79,17 @@ const Cafe = () => {
 </details>
 
  
+    ## # Template
+
+<details>
+ <summary> View Code </summary>
+
+ 
+```
+
+```
+ 
+</details>
  
  ---
  
