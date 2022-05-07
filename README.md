@@ -1,14 +1,38 @@
 # my-react-native-docs
   From flutter to React Native, i will put which code is from react or flutter by (in react) it's from left side and (in flutter) it's from right side
 
+ ## # Build New Project Apps
+Select which folder you want to build your project by cmd first
+  
+<details>
+ <summary> View Code </summary>
+
+ 
+```
+npx react-native init ProjectName
+```
+  
+</details>
+  
+  
+ ## # Run Apps
+Select yout project folder first
+  
+<details>
+ <summary> View Code </summary>
+
+ 
+```
+npx react-native run-android
+```
+</details>
+ 
  ## # Props  / Constructor 
 Props is short for “properties”. Props let you customize React components by passing parameter
 
 <details>
  <summary> View Code </summary>
 
-
- 
 ```
 import React from 'react';
 import { Text, View, Image } from 'react-native';
@@ -89,33 +113,7 @@ const Cafe = () => {
  
 </details>
   
-  ## # Build New Project Apps
 
-  Select which folder you want to build your project by cmd first
-  
-<details>
- <summary> View Code </summary>
-
- 
-```
-npx react-native init ProjectName
-
-```
-</details>
-  
-    ## # Run Apps
-
-  Select yout project folder first
-  
-<details>
- <summary> View Code </summary>
-
- 
-```
-npx react-native run-android
-
-```
-</details>
  
  ---
  
