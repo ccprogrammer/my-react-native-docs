@@ -88,6 +88,34 @@ const Cafe = () => {
 - React Native [List Views](https://reactnative.dev/docs/using-a-listview) 
  
 </details>
+  
+  ## # Build New Project Apps
+
+  Select which folder you want to build your project by cmd first
+  
+<details>
+ <summary> View Code </summary>
+
+ 
+```
+npx react-native init ProjectName
+
+```
+</details>
+  
+    ## # Run Apps
+
+  Select yout project folder first
+  
+<details>
+ <summary> View Code </summary>
+
+ 
+```
+npx react-native run-android
+
+```
+</details>
  
  ---
  
