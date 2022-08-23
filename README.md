@@ -27,6 +27,31 @@ npx react-native run-android
 ```
 </details>
  
+ ## # React Native Snippets
+
+<details>
+ <summary> View Code </summary>
+
+```
+rncs
+
+import { Text, StyleSheet, View } from "react-native";
+import React, { Component } from "react";
+
+export default class App extends Component {
+  render() {
+    return (
+      <View>
+        <Text>App</Text>
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({});
+```
+</details>
+
  ## # Props  / Constructor 
 Props is short for “properties”. Props let you customize React components by passing parameter
 
