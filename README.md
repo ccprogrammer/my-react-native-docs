@@ -33,22 +33,36 @@ npx react-native run-android
  <summary> View Code </summary>
 
 ```
-rncs
+// rnfes
+import { StyleSheet, Text, View } from "react-native";
+import React from "react";
 
-import { Text, StyleSheet, View } from "react-native";
-import React, { Component } from "react";
+const App = () => {
+  return (
+    <View>
+      <Text>App</Text>
+    </View>
+  );
+};
 
-export default class App extends Component {
-  render() {
-    return (
-      <View>
-        <Text>App</Text>
-      </View>
-    );
-  }
+export default App;
+
+const styles = StyleSheet.create({});
+
+// rnfs
+import { StyleSheet, Text, View } from "react-native";
+import React from "react";
+
+export default function App() {
+  return (
+    <View>
+      <Text>App</Text>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({});
+
 ```
 </details>
 
