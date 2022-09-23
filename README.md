@@ -23,7 +23,8 @@ Select yout project folder first
 
  
 ```
-npx react-native run-android
+npm run android | for android or npx react-native run-android
+npm run ios | for ios
 ```
 </details>
  
@@ -49,8 +50,8 @@ export default App;
 
 const styles = StyleSheet.create({});
 
-// rnfs
-import { StyleSheet, Text, View } from "react-native";
+// rnf
+import { View, Text } from "react-native";
 import React from "react";
 
 export default function App() {
@@ -61,97 +62,11 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({});
 
 ```
 </details>
 
- ## # Props  / Constructor 
-Props is short for “properties”. Props let you customize React components by passing parameter
-
-<details>
- <summary> View Code </summary>
-
-```
-import React from 'react';
-import { Text, View, Image } from 'react-native';
-  
-  const Cat = (props) => {
-  return (
-    <View>
-      <Text>Hello, I am {props.name}!</Text>
-    </View>
-  );
-}
-
-const Cafe = () => {
-  return (
-    <View>
-      <Cat name="Maru" />
-      <Cat name="Jellylorum" />
-      <Cat name="Spot" />
-    </View>
-  );
-}
-
-```
-</details>
  
- 
-  ## # useState / setState
-  
-  For more explanation, there are 2 const variables that that have bool value true, in here {isHungry ? "hungry" : "full"} it means if isHungry still remains true it it will return text "hungry" if the state changed it will return "full", setIsHunry in button function is to change the isHungry state and for disabled in button it has the reverse value from isHungry from false at start when isHungry change then the button will change to true
-
-<details>
- <summary> View Code </summary>
-
-```
-import React, { useState } from "react";
-import { Button, Text, View } from "react-native";
-
-  
-const Cat = (props) => {
-  const [isHungry, setIsHungry] = useState(true);
-
-  return (
-    <View>
-      <Text>
-        I am {props.name}, and I am {isHungry ? "hungry" : "full"}!
-      </Text>
-      <Button
-        onPress={() => {
-          setIsHungry(false);
-        }}
-        disabled={!isHungry}
-        title={isHungry ? "Pour me some milk, please!" : "Thank you!"}
-      />
-    </View>
-  );
-}
-
-const Cafe = () => {
-  return (
-    <>
-      <Cat name="Munkustrap" />
-      <Cat name="Spot" />
-    </>
-  );
-}
-      
-```
- 
-</details>
-
- 
-## # List Views(FlatList) / Mapping toList()
-
-<details>
- <summary> View Code </summary>
-
-- React Native [List Views](https://reactnative.dev/docs/using-a-listview) 
- 
-</details>
-  
 
  
  ---
