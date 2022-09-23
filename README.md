@@ -23,7 +23,7 @@ Select yout project folder first
 
  
 ```
-npm run android | for android or npx react-native run-android
+npm run android or npx react-native run-android | for android 
 npm run ios | for ios
 ```
 </details>
